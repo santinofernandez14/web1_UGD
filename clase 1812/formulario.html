@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        form{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" enctype="text/plain" name="form_alumno">
+     <h2>formulario de inscripcion</h2> 
+     <label for="ape_alumno">apellido</label>
+     <input type="text" name="ape_alumno" id="ape_alumno" size="20" maxlength="20">  
+     <br>
+     <label>nombre:</label>
+     <input type="text" name="nom_alumno" size="30" maxlength="30">
+        <br>
+        <label for="edad_alumno">edad:</label>
+        <input type="number" name="edad_alumno" id="edad_alumno" min="18" max="90">
+        <br>
+        <label for="">ciudad de residencia:</label>
+        <input type="text" name="ciudad_alumno" value="san rafael">
+        <br>
+        <input type="submit" value="enviar datos..">
+        <input type="reset" value="limpiar formulario">
+    
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .caja1{
+            width: 700px;
+            height: 500px;
+            background-color: beige;
+            position: relative;
+            z-index: 0;
+        }
+
+        .caja2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            z-index: 2;
+        }
+        .caja3{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 60px;
+            top: 80px;
+            z-index: 1;
+        }
+        .caja4{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+            left: 670px;
+            top: -60px;
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="caja1">
+        <div class="caja2"></div>
+        <div class="caja3"></div>
+    </div>
+    <div class="caja4"></div>
+</body>
+</html>
