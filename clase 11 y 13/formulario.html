@@ -14,17 +14,56 @@
     <form action="#" method="get" enctype="text/plain" name="form_alumno">
      <h2>formulario de inscripcion</h2> 
      <label for="ape_alumno">apellido</label>
-     <input type="text" name="ape_alumno" id="ape_alumno" size="20" maxlength="20">  
+     <input type="text" name="ape_alumno" id="ape_alumno" size="20" maxlength="20" required>  
      <br>
      <label>nombre:</label>
-     <input type="text" name="nom_alumno" size="30" maxlength="30">
+     <input type="text" name="nom_alumno" size="30" maxlength="30" required>
         <br>
         <label for="edad_alumno">edad:</label>
         <input type="number" name="edad_alumno" id="edad_alumno" min="18" max="90">
         <br>
-        <label for="">ciudad de residencia:</label>
+        <label>ciudad de residencia:</label>
         <input type="text" name="ciudad_alumno" value="san rafael">
         <br>
+
+        <label>fecha de nacimiento</label>
+        <input type="date" name="fechnac_alumno" max="2004-12-31" value="2000-02-20" required>
+        <br>
+        <label>sexo:</label>
+        <br>
+        <label for="sexo_alumno_mas">masculino</label>
+        <input type="radio" name="sexo_alumno" id="sexo_alumno_mas" value="masculino">
+
+
+        <label for="sexo_alumno_fem">femenino</label>
+        <input type="radio" name="sexo_alumno" id="sexo_alumno_fem" value="femenino">
+        <br>
+        <label>carrera a la que te vas a inscribir</label>
+        <br>
+        <label>lic. en informatica</label>
+        <input type="checkbox" name="carrera_alumno" value="informatica" checked>
+        <br>
+        <label>contador publico</label>
+        <input type="checkbox" name="carrera_alumno" value="contador">
+        <br>
+        <label>farmacia</label>
+        <input type="checkbox" name="carrera_alumno" value="farmacia">
+        <br>
+        <label>seleccione foto de perfil</label>
+        <input type="file" title="seleccione una foto" name="foto_alumno" accept="image/*">
+        <br>
+        <label>clave de acceso</label>
+        <input type="password" name="pass_alumno">
+
+
+        <br>
+        <label>hacer algo</label>
+        <input type="button" value="pulsar" onclick="alert('hizo click!!!')">
+        <br>
+        
+        
+
+
         <input type="submit" value="enviar datos..">
         <input type="reset" value="limpiar formulario">
     
