@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     form{
+        
+        position: relative;
+        top: 85px;
+     }
+
+     body{
+      background-color: rgb(5, 119, 81);
+     }
+     #usuario{
+        text-align: center;
+     }
+     #password{
+        text-align: center; 
+     }
+     #boton{
+        text-align: center;
+     }
+     h2{
+        text-align: center; 
+     }
+
+
+
+    </style>
+    <script>
+      function chequear(user,pass){
+         if(user=="pepe" && pass=="123"){
+            alert("acceso exitoso")
+         }else{
+            alert("usuario y/o contraseña incorrectos")
+         }
+
+      }
+    </script>
+</head>
+
+<body>
+    
+<form name="form_login" onsubmit="event.preventDefault(); chequear(this.usuario.value, this.password.value)">
+
+<h2>login</h2>
+<div id="usuario">
+<label for="usuario">usuario</label>
+
+<input type="text" name="usuario" id="usuario" size="20" maxlength="20" required>
+<br>
+<br>
+
+</div>
+<div id="password">
+<label for="password">password</label>
+<input type="text" name="password" id="password" size="20" maxlength="20" required>
+<br>
+<br>
+</div>
+
+<div id="boton">
+
+<input title="boton enviar" alt="boton enviar" src="img2.jpeg" type="image" width="75px" height="75px" />
+
+</div>
+</form>
+
+</body>
+
+</html>
