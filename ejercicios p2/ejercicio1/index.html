@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <form name="form_numero" onsubmit="event.preventDefault(); validar(this.numero.value)" >
+
+        <h2>ejercicio1</h2>
+        <div id="numero">
+        <label for="ingrese un numero">ingrese un numero</label>
+        
+        <input type="number" name="numero" id="numero" size="20" maxlength="3" required>
+        <br>
+        <br>
+        <div id="boton">
+        <input type="submit" title="boton enviar" alt="boton enviar"/>
+        </div>
+
+    </form>
+</body>
+</html>
+
